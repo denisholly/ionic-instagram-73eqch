@@ -3,24 +3,24 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="home" href="/tabs/home">
-          <ion-icon :icon="home" />
+        <ion-tab-button tab="home" href="/home">
+          <ion-icon :icon="homeOutline" />
         </ion-tab-button>
           
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
+        <ion-tab-button tab="search" href="/search">
           <ion-icon :icon="searchOutline" />
         </ion-tab-button>
         
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
+        <ion-tab-button tab="camera" href="/camera">
+          <ion-icon :icon="addCircleOutline" />
         </ion-tab-button>
 
-        <ion-tab-button tab="tab4" href="/tabs/tab4">
-          <ion-icon :icon="ellipse" />
+        <ion-tab-button tab="liked" href="/liked">
+          <ion-icon :icon="heartOutline" />
         </ion-tab-button>
 
-        <ion-tab-button tab="tab5" href="/tabs/tab5">
-          <ion-icon :icon="ellipse" />
+        <ion-tab-button tab="profile" href="/profile">
+          <ion-icon :icon="personOutline" />
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -29,18 +29,19 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { ellipse, square, home, searchOutline } from 'ionicons/icons';
+import { IonTabBar, IonTabButton, IonTabs, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
+import { homeOutline, searchOutline, addCircleOutline, heartOutline, personOutline } from 'ionicons/icons';
 
 export default defineComponent({
-  name: 'TabsPage',
+  name: 'tabs-page',
   components: { IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
   setup() {
     return {
-      ellipse, 
-      square, 
-      home,
-      searchOutline
+      homeOutline,
+      searchOutline,
+      addCircleOutline,
+      heartOutline,
+      personOutline
     }
   }
 });

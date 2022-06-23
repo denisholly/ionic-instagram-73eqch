@@ -16,3 +16,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+.text-gray {
+  color: #999;
+}
+</style>
