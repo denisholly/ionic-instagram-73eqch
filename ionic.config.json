@@ -1,0 +1,8 @@
+{
+  "name": "ionic-instagram",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "f11d5955"
+}
