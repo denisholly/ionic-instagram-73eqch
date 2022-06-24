@@ -23,6 +23,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+* {
+  font-size: 14px;
+}
+
 ion-toolbar {
   padding: 4px;
 }

@@ -13,6 +13,7 @@
           </span>
         </div>
       </z-stories>
+      <z-post />
     </ion-content>
   </ion-page>
 </template>
@@ -20,13 +21,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonContent, IonIcon } from '@ionic/vue';
-import playSharp from 'ionicons/icons';
+import { playSharp } from 'ionicons/icons';
 import AHomeHeader from '@/components/a-home-header.vue';
 import ZStories from '@/components/z-stories.vue';
+import ZPost from '@/components/z-post.vue';
 
 export default defineComponent({
   name: 'home-page',
-  components: { AHomeHeader, ZStories, IonHeader, IonContent, IonPage, IonIcon },
+  components: { AHomeHeader, ZStories, ZPost, IonHeader, IonContent, IonPage, IonIcon },
   setup() {
     return {
       playSharp

@@ -1,50 +1,31 @@
 <template>
     <slot />
     <div class="wrapper">
-        <div class="user text-gray">
+        <div v-for="story in stories" :key="story" class="user text-gray">
             <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
+                <img :src="story.avatar" alt="avatar">
             </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
-        </div>
-        <div class="user text-gray">
-            <div class="avatar">
-                <img src="@/assets/elonmusk.jpg" alt="avatar">
-            </div>
-            elonmusk
+            {{ story.name }}
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            stories: [
+                { avatar: require('@/assets/avatars/elonmusk.jpg'), name: 'elonmusk' },
+                { avatar: require('@/assets/avatars/lenkamie.jpg'), name: 'lenkamie' },
+                { avatar: require('@/assets/avatars/mateklemp.jpg'), name: 'mateklemp' },
+                { avatar: require('@/assets/avatars/bhadbhabie.jpg'), name: 'bhadbhabie' },
+                { avatar: require('@/assets/avatars/teamklemp.jpg'), name: 'teamklemp' },
+                { avatar: require('@/assets/avatars/loganpaul.jpg'), name: 'loganpaul' },
+            ]
+        }
+    }
+}
+</script>
 
 <style scoped>
 .wrapper {
@@ -67,8 +48,9 @@
 .avatar {
     border-radius: 999px;
     border: 1px solid #c6c6c6;
-    margin-bottom: 5px;
+    margin: 0 auto 5px auto;
     padding: 3px;
+    width: 68px;
     height: 68px;
 }
 

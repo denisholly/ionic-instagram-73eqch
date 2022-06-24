@@ -1,27 +1,22 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 3</ion-title>
-      </ion-toolbar>
+      <a-profile-header />
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Profile Page</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
+      <a-stats />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonContent } from '@ionic/vue';
+import AProfileHeader from '@/components/a-profile-header.vue';
+import AStats from '@/components/a-stats.vue';
 
 export default defineComponent({
   name: 'Tab3Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { AProfileHeader, AStats, IonHeader, IonContent, IonPage }
 });
 </script>
