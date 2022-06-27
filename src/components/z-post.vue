@@ -62,54 +62,6 @@ export default {
             chevronForwardOutline
         }
     },
-    data() {
-        return {
-            // posts: [
-            //     {
-            //         avatar: require('@/assets/avatars/loganpaul.jpg'),
-            //         name: 'loganpaul',
-            //         location: 'Dubai, United Arab Emirates',
-            //         image: require('@/assets/posts/loganpaul.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            //     {
-            //         avatar: require('@/assets/avatars/elonmusk.jpg'),
-            //         name: 'elonmusk',
-            //         location: '',
-            //         image: require('@/assets/posts/elonmusk.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            //     {
-            //         avatar: require('@/assets/avatars/teamklemp.jpg'),
-            //         name: 'teamklemp',
-            //         location: '',
-            //         image: require('@/assets/posts/teamklemp.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            //     {
-            //         avatar: require('@/assets/avatars/mateklemp.jpg'),
-            //         name: 'mateklemp',
-            //         location: 'Homolka',
-            //         image: require('@/assets/posts/mateklemp.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            //     {
-            //         avatar: require('@/assets/avatars/bhadbhabie.jpg'),
-            //         name: 'bhadbhabie',
-            //         location: 'Melrose Avenue',
-            //         image: require('@/assets/posts/bhadbhabie.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            //     {
-            //         avatar: require('@/assets/avatars/expl0ited_.jpg'),
-            //         name: 'expl0ited_',
-            //         location: 'Bratislava',
-            //         image: require('@/assets/posts/expl0ited_.jpg'),
-            //         desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
-            //     },
-            // ]
-        }
-    }
 }
 </script>
 
@@ -161,6 +113,7 @@ export default {
 
 .desc a {
     color: #3897f0;
+    text-decoration: none;
 }
 
 .note {
