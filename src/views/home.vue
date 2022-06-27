@@ -38,8 +38,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
   * {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .stories-header {

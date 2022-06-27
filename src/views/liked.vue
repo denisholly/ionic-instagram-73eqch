@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-segment @ionChange="segmentChanged($event)">
+        <ion-segment value="camera" mode="md" @ionChange="segmentChanged($event)">
           <ion-segment-button value="camera">
             <ion-label>Following</ion-label>
           </ion-segment-button>

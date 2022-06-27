@@ -1,12 +1,12 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar class="toolbar-border-none">
         <ion-searchbar></ion-searchbar>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <z-stories></z-stories>
+      <z-stories />
     </ion-content>
   </ion-page>
 </template>
@@ -33,6 +33,10 @@ ion-toolbar {
 
 ion-searchbar {
   padding: 8px;
+}
+
+.toolbar-border-none {
+  --border-style: none;
 }
 
 </style>

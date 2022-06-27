@@ -6,7 +6,7 @@
                     <img :src="post.avatar">
                 </ion-avatar>
                 <ion-label>
-                    <h3>
+                    <h3 class="post-header">
                         <b>{{ post.name }}</b>
                         <div class="location">
                             {{ post.location }}
@@ -118,9 +118,15 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px !important;
+}
+
+.post-header {
+    font-size: 14px !important;
 }
 
 .header h3 {
+    font-size: 14px !important;
     font-weight: 700;
 }
 

@@ -1,6 +1,6 @@
 <template>
     <ion-toolbar>
-        <ion-toolbar>
+        <ion-toolbar class="toolbar-border-none">
             <ion-buttons slot="secondary">
                 <ion-button>
                     <ion-icon slot="icon-only" :icon="cameraOutline"></ion-icon>
@@ -55,4 +55,9 @@ ion-icon {
     width: 36px;
     height: 40px;
 }
+
+.toolbar-border-none {
+  --border-style: none;
+}
+
 </style>

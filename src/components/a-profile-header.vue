@@ -1,6 +1,6 @@
 <template>
     <ion-toolbar>
-        <ion-toolbar>
+        <ion-toolbar class="toolbar-border-none">
             <ion-buttons slot="secondary">
                 <ion-button>
                     <ion-icon slot="icon-only" :icon="person" />
@@ -8,6 +8,7 @@
             </ion-buttons>
             <ion-title>
                 loganpaul
+                <ion-icon :icon="chevronDown" />
             </ion-title>
             <ion-buttons slot="end">
                 <ion-button color="primary">
@@ -20,7 +21,7 @@
 
 <script>
 import { IonToolbar } from '@ionic/vue';
-import { person, timerOutline } from 'ionicons/icons';
+import { person, timerOutline, chevronDown } from 'ionicons/icons';
 export default {
     components: {
         IonToolbar,
@@ -28,14 +29,21 @@ export default {
     setup() {
         return {
             person,
-            timerOutline
+            timerOutline,
+            chevronDown
         }
     }
 }
 </script>
 
 <style scoped>
+
 ion-buttons {
+    display: flex;
+    align-items: center;
+}
+
+ion-title {
     display: flex;
     align-items: center;
 }
@@ -48,4 +56,9 @@ ion-button img {
     width: 36px;
     height: 40px;
 }
+
+.toolbar-border-none {
+  --border-style: none;
+}
+
 </style>
