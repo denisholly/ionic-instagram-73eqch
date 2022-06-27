@@ -47,7 +47,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
-
-
+ion-segment-button, ion-segment {
+  --border: none;
+}
 </style>
