@@ -20,11 +20,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonContent, IonSegment, IonSegmentButton, IonLabel } from '@ionic/vue';
 import ZActivity from '@/components/z-activity.vue';
 
 export default defineComponent({
   name: 'Tab3Page',
-  components: { ZActivity, IonHeader, IonToolbar, IonContent, IonPage }
+  components: { ZActivity, IonHeader, IonToolbar, IonContent, IonPage, IonSegment, IonSegmentButton, IonLabel }
 });
 </script>

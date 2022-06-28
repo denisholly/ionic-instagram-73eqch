@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import { IonAvatar, IonItem, IonIcon } from '@ionic/vue'
+import { IonAvatar, IonItem, IonIcon, IonLabel } from '@ionic/vue'
 import { ellipsisHorizontal, heartOutline, bookmarkOutline, chatbubbleOutline, chevronForwardOutline } from 'ionicons/icons';
 export default {
     props: ['posts'],
-    components: { IonAvatar, IonItem, IonIcon },
-    setup() {
+    components: { IonAvatar, IonItem, IonIcon, IonLabel },
+    data() {
         return {
             ellipsisHorizontal,
             heartOutline,

@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonContent, IonSegment, IonSegmentButton, IonIcon } from '@ionic/vue';
 import { appsOutline, listOutline, personOutline, bookmarkOutline } from 'ionicons/icons';
 import AProfileHeader from '@/components/a-profile-header.vue';
 import AStats from '@/components/a-stats.vue';
@@ -37,8 +37,8 @@ import AProfilePosts from '@/components/a-profile-posts.vue';
 
 export default defineComponent({
   name: 'Tab3Page',
-  components: { AProfileHeader, AStats, AProfilePosts, IonHeader, IonContent, IonPage },
-  setup() {
+  components: { AProfileHeader, AStats, AProfilePosts, IonHeader, IonContent, IonPage, IonSegment, IonSegmentButton, IonIcon },
+  data() {
     return {
         appsOutline, listOutline, personOutline, bookmarkOutline
     }
@@ -47,7 +47,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
-ion-segment-button, ion-segment {
-  --border: none;
+
+ion-segment-button {
+  --indicator-height: none;
 }
+
 </style>

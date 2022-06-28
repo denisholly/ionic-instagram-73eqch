@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
+import { createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import Tabs from '../views/tabs.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -36,8 +36,9 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
+  
 })
 
 export default router

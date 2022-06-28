@@ -40,8 +40,8 @@
 
 <script>
 import { cogOutline } from 'ionicons/icons';
-export default {
-    setup() {
+export default{
+    data() {
         return {
             cogOutline
         }
@@ -49,7 +49,13 @@ export default {
 }
 </script>
 
+
 <style scoped>
+
+.fullstats {
+    border-bottom: 1px solid #dbdbdb;
+}
+
 ion-avatar {
     width: 80px;
     height: 80px;
@@ -81,5 +87,7 @@ ion-button {
     border-radius: 4px !important;
     font-size: 14px;
     height: 30px;
+    --background-activated: none;
 }
+
 </style>

@@ -35,7 +35,7 @@ import { homeOutline, searchOutline, addCircleOutline, heartOutline, personOutli
 export default defineComponent({
   name: 'tabs-page',
   components: { IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
-  setup() {
+  data() {
     return {
       homeOutline,
       searchOutline,

@@ -12,7 +12,11 @@
 </template>
 
 <script>
+import { IonGrid, IonRow, IonCol } from '@ionic/vue';
 export default {
+    components: {
+        IonGrid, IonRow, IonCol
+    },
     data() {
         return {
             posts: [
@@ -43,4 +47,5 @@ ion-col {
     padding: 0.5px!important;
     margin-bottom: -4px;
 }
+
 </style>

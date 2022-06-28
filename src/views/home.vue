@@ -35,9 +35,6 @@ import ZPost from '@/components/z-post.vue';
 export default defineComponent({
   name: 'home-page',
   components: { AHomeHeader, ZStories, ZPost, IonHeader, IonContent, IonPage, IonIcon, IonRefresher, IonRefresherContent },
-  setup() {
-    return { playSharp }
-  },
   methods: {
 		refresh(e) {
 			setTimeout(() => {
@@ -97,7 +94,8 @@ export default defineComponent({
             image: require('@/assets/posts/expl0ited_.jpg'),
             desc: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.'
         },
-      ]
+      ],
+      playSharp
     }
   }
 

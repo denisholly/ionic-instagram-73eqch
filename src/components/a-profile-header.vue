@@ -26,7 +26,7 @@ export default {
     components: {
         IonToolbar,
     },
-    setup() {
+    data() {
         return {
             person,
             timerOutline,
